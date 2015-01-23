@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ActionableEmptyView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BookmarkLarge" translatesAutoresizingMaskIntoConstraints="NO" id="XL0-kj-lYl">
+                    <rect key="frame" x="270" y="60" width="60" height="72"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is an empty state view." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="480" translatesAutoresizingMaskIntoConstraints="NO" id="rKw-UH-cfT" customClass="MultilineLabel">
+                    <rect key="frame" x="210" y="152" width="180" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="7Kq-Nj-ipo"/>
+                        <constraint firstAttribute="width" constant="480" id="a6Y-Am-Zs3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="a6Y-Am-Zs3"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="7Kq-Nj-ipo"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <exclude reference="7Kq-Nj-ipo"/>
+                            <include reference="a6Y-Am-Zs3"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Come back later and find some real content when we actually can download it" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="366" translatesAutoresizingMaskIntoConstraints="NO" id="BAy-OJ-gIr" customClass="MultilineLabel">
+                    <rect key="frame" x="180" y="183" width="240" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="366" id="1qG-96-QAR"/>
+                        <constraint firstAttribute="width" constant="240" id="g0H-WI-ViF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1qG-96-QAR"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="g0H-WI-ViF"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="1qG-96-QAR"/>
+                            <exclude reference="g0H-WI-ViF"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFM-GD-R8f">
+                    <rect key="frame" x="210" y="284" width="180" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="78z-OJ-VEn"/>
+                        <constraint firstAttribute="width" constant="180" id="ClL-5M-JVk"/>
+                    </constraints>
+                    <state key="normal" title="Start Exploring">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rKw-UH-cfT" firstAttribute="top" secondItem="XL0-kj-lYl" secondAttribute="bottom" constant="20" id="1Df-z5-FAX"/>
+                <constraint firstItem="XL0-kj-lYl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="120" id="56Z-nl-GWl"/>
+                <constraint firstItem="XL0-kj-lYl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="56w-gA-NE7"/>
+                <constraint firstItem="rKw-UH-cfT" firstAttribute="top" secondItem="XL0-kj-lYl" secondAttribute="bottom" constant="30" id="7oA-c8-3JS"/>
+                <constraint firstItem="aFM-GD-R8f" firstAttribute="top" secondItem="BAy-OJ-gIr" secondAttribute="bottom" constant="60" id="AuL-Ky-i8o"/>
+                <constraint firstItem="BAy-OJ-gIr" firstAttribute="centerX" secondItem="rKw-UH-cfT" secondAttribute="centerX" id="LRl-Ud-riV"/>
+                <constraint firstItem="aFM-GD-R8f" firstAttribute="top" secondItem="BAy-OJ-gIr" secondAttribute="bottom" constant="132" id="Lbg-4K-8Fn"/>
+                <constraint firstItem="BAy-OJ-gIr" firstAttribute="centerX" secondItem="aFM-GD-R8f" secondAttribute="centerX" id="Lqi-AT-5VM"/>
+                <constraint firstAttribute="centerX" secondItem="XL0-kj-lYl" secondAttribute="centerX" id="OmU-0e-1Cg"/>
+                <constraint firstItem="BAy-OJ-gIr" firstAttribute="top" secondItem="rKw-UH-cfT" secondAttribute="bottom" constant="16" id="Pgj-6o-rfy"/>
+                <constraint firstItem="BAy-OJ-gIr" firstAttribute="top" secondItem="rKw-UH-cfT" secondAttribute="bottom" constant="10" id="ZWy-sM-XDt"/>
+                <constraint firstItem="aFM-GD-R8f" firstAttribute="top" secondItem="BAy-OJ-gIr" secondAttribute="bottom" constant="60" id="cUI-vy-Ja2"/>
+                <constraint firstItem="BAy-OJ-gIr" firstAttribute="bottom" secondItem="aFM-GD-R8f" secondAttribute="bottom" constant="-175" id="gBt-PE-HUy"/>
+                <constraint firstItem="XL0-kj-lYl" firstAttribute="centerX" secondItem="rKw-UH-cfT" secondAttribute="centerX" id="lbb-hh-q12"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Pgj-6o-rfy"/>
+                    <exclude reference="gBt-PE-HUy"/>
+                    <exclude reference="7oA-c8-3JS"/>
+                    <exclude reference="56Z-nl-GWl"/>
+                    <exclude reference="Lbg-4K-8Fn"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="ZWy-sM-XDt"/>
+                    <include reference="1Df-z5-FAX"/>
+                    <include reference="56w-gA-NE7"/>
+                    <include reference="cUI-vy-Ja2"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="constraints">
+                    <include reference="Pgj-6o-rfy"/>
+                    <exclude reference="ZWy-sM-XDt"/>
+                    <exclude reference="gBt-PE-HUy"/>
+                    <exclude reference="1Df-z5-FAX"/>
+                    <include reference="7oA-c8-3JS"/>
+                    <include reference="56Z-nl-GWl"/>
+                    <exclude reference="56w-gA-NE7"/>
+                    <include reference="Lbg-4K-8Fn"/>
+                    <exclude reference="cUI-vy-Ja2"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="descriptionLabel" destination="BAy-OJ-gIr" id="0Y2-CK-Z5V"/>
+                <outlet property="exploreButton" destination="aFM-GD-R8f" id="1k7-g0-08u"/>
+                <outlet property="titleLabel" destination="rKw-UH-cfT" id="Ecx-L1-ABn"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="BookmarkLarge" width="60" height="72"/>
+    </resources>
+</document>
